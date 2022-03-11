@@ -9,7 +9,7 @@ Client.on("ready", async => {
     Client.user.setActivity("The sea", {type : 'WATCHING'})
 })
 
-Client.on("message", async message => {
+Client.on("messageCreate", async message => {
     if(message.author.Client || message.channel.type === "dm") return;
 
     let prefix = config.prefix;
