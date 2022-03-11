@@ -4,8 +4,6 @@ const config = require('./config.json');
 
 const Client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 
-const xpfile = require("./xp.json")
-
 Client.on("ready", async => {
     console.log(`${Client.user.username} is online!`)
     Client.user.setActivity("The sea", {type : 'WATCHING'})
