@@ -28,6 +28,15 @@ Client.on("message", async message => {
         return message.reply("hello, how are you?")
     }
 
+    if(cmd === `$[prefix]piratemovie`) {
+        let embeds = new Discord.MessageEmbed()
+        .setTitle("Here's the perfect website to watch movies for free!")
+        .setURL("https://github.com/popcorn-official/popcorn-desktop/releases")
+        .setColor("RANDOM")
+        .setDescription("Beware tho, make sure you have a vpn just in case!")
+        return message.channel.send({embeds : [embeds]})
+    }
+
 }) 
         
 Client.login(process.env.token);
