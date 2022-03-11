@@ -20,7 +20,7 @@ Client.on("message", async message => {
 
     // If Someone Send =hi the bot will respond by Hello There!
     if(cmd === `${prefix}hi`) {
-        return message.channel.send("Hello There!")
+        return message.channel.send("Hello There! We are going to set sail! Prepare yourselves!")
     }
 
     // if someone say =hello the bot will mention/ping him then say hello, how are you?
