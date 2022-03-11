@@ -28,7 +28,7 @@ Client.on("messageCreate", async message => {
         return message.reply("hello, how are you?")
     }
 
-    if(cmd === `$[prefix]piratemovie`) {
+    if(cmd === `${prefix}movie`) {
         let embeds = new Discord.MessageEmbed()
         .setTitle("Here's the perfect website to watch movies for free!")
         .setURL("https://github.com/popcorn-official/popcorn-desktop/releases")
