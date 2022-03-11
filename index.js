@@ -30,7 +30,6 @@ Client.on("message", async message => {
         return message.reply("hello, how are you?")
     }
 
-})
- 
+}) 
         
 Client.login(process.env.token);
